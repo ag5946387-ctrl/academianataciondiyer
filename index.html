@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia de Natación Diyer: matronatación, clases para niños, adultos, colegios y natación inclusiva en Villavicencio.">
+    <link href="assets/favicon.jpeg" rel="icon" type="image/png">
+    <link href="assets/favicon.jpeg" rel="apple-touch-icon">
+    <title>Academia de Natación Diyer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header class="glass-header">
+        <nav>
+            <a class="logo" href="#inicio" aria-label="Ir al inicio">
+                <img src="assets/favicon.png" alt="Logo de Academia Diyer" class="brand-logo">
+                <h1>Academia Diyer</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#programas" class="nav-link">Programas</a></li>
+                <li><a href="#sedes" class="nav-link">Sedes</a></li>
+                <li><a href="#tarifas" class="nav-link">Tarifas</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button id="dark-mode-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger" type="button" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Dos sedes en Villavicencio</span>
+                </div>
+                <h2 class="gradient-text">Academia de Natación Diyer</h2>
+                <p class="brand-hashtag">#NadaMásDivertido</p>
+                <p class="hero-subtitle">Clases de natación para bebés, niños, adultos y colegios, con acompañamiento cercano, seguridad en el agua y aprendizaje por etapas.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/573108731095" class="btn btn-primary" target="_blank" rel="noopener">
+                        <span>Inscribirme por WhatsApp</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#programas" class="btn btn-secondary">Ver programas</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Sedes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Meses en adelante</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Líneas de formación</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-mascots" aria-hidden="true">
+                <img src="assets/estrella.png" alt="">
+                <img src="assets/medusa.png" alt="">
+                <img src="assets/tortuga.png" alt="">
+            </div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Por qué elegir Diyer</span>
+                    <h2 class="section-title">Aprender a nadar también es aprender confianza</h2>
+                    <p class="section-subtitle">Acompañamos cada etapa con clases seguras, lúdicas y adaptadas al desarrollo de cada estudiante.</p>
+                </div>
+                <div class="about-grid">
+                    <article class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Desde los 6 meses</h3>
+                        <p>Matronatación para fortalecer el vínculo familiar y la adaptación temprana al agua.</p>
+                    </article>
+                    <article class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fas fa-shield-heart"></i>
+                        </div>
+                        <h3>Seguridad primero</h3>
+                        <p>Sesiones enfocadas en confianza, autocuidado, disciplina y dominio progresivo del medio acuático.</p>
+                    </article>
+                    <article class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fas fa-child-reaching"></i>
+                        </div>
+                        <h3>Aprendizaje por juego</h3>
+                        <p>Clases de 30 a 45 minutos diseñadas para mantener atención, motivación y avance real.</p>
+                    </article>
+                    <article class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fas fa-hands-holding-child"></i>
+                        </div>
+                        <h3>Natación inclusiva</h3>
+                        <p>Experiencia en procesos de natación para niños con autismo y acompañamiento sensible.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="programas" class="courses">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Servicios y programas</span>
+                    <h2 class="section-title">Una ruta acuática para cada edad</h2>
+                    <p class="section-subtitle">Elige el programa según la etapa, el objetivo y la sede que mejor se ajuste a tu familia.</p>
+                </div>
+                <div class="program-grid">
+                    <article class="program-card featured-program">
+                        <div class="program-icon">
+                            <img src="assets/medusa.png" alt="Icono de matronatación">
+                        </div>
+                        <span class="program-kicker">6 a 30 meses</span>
+                        <h3>Natación para bebés</h3>
+                        <p>Matronatación con acompañante para adaptación, flotación asistida, vínculo y estimulación motriz.</p>
+                        <a href="#contacto" class="text-link">Consultar cupos</a>
+                    </article>
+                    <article class="program-card">
+                        <div class="program-icon">
+                            <img src="assets/tortuga.png" alt="Icono de clases infantiles">
+                        </div>
+                        <span class="program-kicker">Desde 1 año</span>
+                        <h3>Clases para niños</h3>
+                        <p>Sesiones lúdicas de 30 a 45 minutos para seguridad, respiración, flotación, desplazamiento y disciplina.</p>
+                        <a href="#contacto" class="text-link">Elegir sede</a>
+                    </article>
+                    <article class="program-card">
+                        <div class="program-icon">
+                            <img src="assets/pinguino.png" alt="Icono de formación avanzada">
+                        </div>
+                        <span class="program-kicker">Todas las edades</span>
+                        <h3>Adultos y colegios</h3>
+                        <p>Clases dirigidas, convenios institucionales y procesos para quienes desean aprender o mejorar técnica.</p>
+                        <a href="#contacto" class="text-link">Solicitar información</a>
+                    </article>
+                    <article class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <span class="program-kicker">Acompañamiento</span>
+                        <h3>Natación inclusiva</h3>
+                        <p>Procesos adaptados para niños con autismo, con foco en confianza, comunicación y avance gradual.</p>
+                        <a href="#contacto" class="text-link">Hablar con la academia</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="niveles" class="levels">
+            <div class="container">
+                <div class="section-header compact">
+                    <span class="section-tag">Niveles infantiles</span>
+                    <h2 class="section-title">Progreso por etapas</h2>
+                </div>
+                <div class="levels-strip">
+                    <article class="level-item">
+                        <img src="assets/estrella.png" alt="Estrella de mar">
+                        <h3>Ambientación</h3>
+                        <p>Confianza, juego y primeras apneas.</p>
+                    </article>
+                    <article class="level-item">
+                        <img src="assets/caballodelmar.png" alt="Caballo de mar">
+                        <h3>Propulsión</h3>
+                        <p>Patada, desplazamientos y control corporal.</p>
+                    </article>
+                    <article class="level-item">
+                        <img src="assets/pulpo.png" alt="Pulpo">
+                        <h3>Respiración</h3>
+                        <p>Balance, coordinación y autonomía.</p>
+                    </article>
+                    <article class="level-item">
+                        <img src="assets/ballena.png" alt="Ballena">
+                        <h3>Técnica</h3>
+                        <p>Estilos, distancia y disciplina deportiva.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sedes" class="locations-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Sedes y ubicaciones</span>
+                    <h2 class="section-title">Escoge el punto más cómodo para ti</h2>
+                    <p class="section-subtitle">Diyer cuenta con dos puntos principales de atención en la ciudad.</p>
+                </div>
+                <div class="locations-grid">
+                    <article class="location-card glass-card">
+                        <div class="location-badge">Sede principal</div>
+                        <div class="location-title">
+                            <i class="fas fa-location-dot"></i>
+                            <h3>El Buque</h3>
+                        </div>
+                        <p class="location-copy">Enfocada principalmente en bebés de 6 a 30 meses y procesos de adaptación temprana al agua.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Dirección</h4>
+                                    <p>Cra. 43c #18-47</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-baby"></i>
+                                <div>
+                                    <h4>Ideal para</h4>
+                                    <p>Bebés, matronatación y familias que inician el proceso acuático.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="location-card glass-card">
+                        <div class="location-badge">Piscina cubierta</div>
+                        <div class="location-title">
+                            <i class="fas fa-water-ladder"></i>
+                            <h3>Vanguardia</h3>
+                        </div>
+                        <p class="location-copy">Sede con piscina cubierta, climatizada y amplia zona de parqueo para mayor comodidad.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Sector</h4>
+                                    <p>Vanguardia</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-child"></i>
+                                <div>
+                                    <h4>Ideal para</h4>
+                                    <p>Niños mayores de 1 año, continuidad técnica y clases familiares.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="tarifas" class="pricing">
+            <div class="container">
+                <div class="section-header compact">
+                    <span class="section-tag">Tarifas referenciales</span>
+                    <h2 class="section-title">Planes simples para empezar</h2>
+                    <p class="section-subtitle">Los valores pueden variar según sede, cantidad de sesiones, nivel y programa específico.</p>
+                </div>
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <span>Clase individual</span>
+                        <strong>$15.000 COP</strong>
+                        <p>Ideal para conocer la metodología o tomar una sesión puntual.</p>
+                    </article>
+                    <article class="price-card highlighted">
+                        <span>Mensualidad</span>
+                        <strong>Desde $55.000 COP</strong>
+                        <p>Planes mensuales sujetos al número de sesiones y programa elegido.</p>
+                    </article>
+                    <article class="price-card">
+                        <span>Convenios</span>
+                        <strong>A consultar</strong>
+                        <p>Opciones para colegios, grupos familiares y programas especiales.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="contact-panel">
+                    <div>
+                        <span class="section-tag">Contacto y horarios</span>
+                        <h2 class="section-title">Agenda tu clase en Diyer</h2>
+                        <p class="section-subtitle left">Comunícate por teléfono, WhatsApp o redes sociales para confirmar disponibilidad según sede, edad y nivel.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/573108731095" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+57 310 8731095</span>
+                        </a>
+                        <a href="tel:+573135457602" class="btn btn-secondary dark-text">
+                            <i class="fas fa-phone"></i>
+                            <span>313 5457602</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <article class="info-card glass-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Horario general</h3>
+                        <p>Lunes a viernes de 8:00 a.m. a 5:00 p.m.<br>Sábados de 8:00 a.m. a 1:00 p.m.</p>
+                    </article>
+                    <article class="info-card glass-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Horarios de clase</h3>
+                        <p>Las clases específicas pueden variar según sede, edad, nivel y cupos disponibles.</p>
+                    </article>
+                    <article class="info-card glass-card">
+                        <i class="fas fa-share-nodes"></i>
+                        <h3>Redes sociales</h3>
+                        <p>Consulta novedades, horarios y contenido actualizado en Instagram y TikTok.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/diyergon" class="social-link" target="_blank" rel="noopener" aria-label="Instagram de Diyer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@nadamasdivertido" class="social-link" target="_blank" rel="noopener" aria-label="TikTok de Diyer"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content-simple">
+            <img src="assets/favicon.png" alt="Logo de Academia Diyer" class="footer-logo">
+            <p class="footer-hashtag">#NadaMásDivertido</p>
+            <p>&copy; 2026 Academia de Natación Diyer. Todos los derechos reservados.</p>
+            <p class="footer-credit">Hecho por <a href="https://github.com/txcmatheo" target="_blank" rel="noopener">txcmatheo</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
