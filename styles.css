@@ -40,6 +40,12 @@ body {
     overflow-x: hidden;
 }
 
+img,
+svg,
+video {
+    max-width: 100%;
+}
+
 body.dark-mode {
     color: var(--text-dark);
     background: var(--bg-dark);
@@ -1674,26 +1680,110 @@ body.dark-mode .form-group textarea:valid ~ label {
 }
 
 @media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+
+    nav {
+        padding: 0 1rem;
+        min-height: 68px;
+        gap: 0.75rem;
+    }
+
+    .glass-header {
+        padding: 0.55rem 0;
+        background: rgba(3, 12, 22, 0.92);
+    }
+
+    .logo {
+        min-width: 0;
+        gap: 0.65rem;
+        flex: 1;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+    }
+
+    .logo h1 {
+        font-size: clamp(1.15rem, 7vw, 1.85rem);
+        line-height: 1.1;
+        max-width: 7.5em;
+    }
+
+    .theme-toggle {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+    }
+
     .hamburger {
         display: flex;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.12);
+        padding: 0;
+    }
+
+    .hamburger span {
+        position: absolute;
+    }
+
+    .hamburger span:nth-child(1) {
+        transform: translateY(-8px);
+    }
+
+    .hamburger span:nth-child(3) {
+        transform: translateY(8px);
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
     }
     
     .nav-links {
         position: fixed;
-        top: 70px;
-        left: -100%;
+        top: 76px;
+        left: 0;
         width: 100%;
-        height: calc(100vh - 70px);
-        background: rgba(0, 0, 0, 0.95);
+        height: calc(100vh - 76px);
+        background: rgba(2, 8, 15, 0.98);
+        backdrop-filter: blur(18px);
         flex-direction: column;
         align-items: center;
-        justify-content: start;
-        padding-top: 3rem;
-        transition: left 0.3s;
+        justify-content: center;
+        gap: 1.2rem;
+        padding: 2rem 1rem;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        z-index: 999;
     }
     
     .nav-links.active {
-        left: 0;
+        transform: translateX(0);
     }
 
     .glass-header.scrolled .nav-link {
@@ -1701,25 +1791,111 @@ body.dark-mode .form-group textarea:valid ~ label {
     }
     
     .nav-links li {
-        margin: 1rem 0;
+        margin: 0;
+        width: min(100%, 300px);
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 0.95rem 1rem;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        font-size: 1.05rem;
     }
     
     .gradient-text {
-        font-size: 2.15rem;
+        font-size: clamp(2.05rem, 11vw, 3rem);
+        line-height: 1.12;
+        max-width: 100%;
+        overflow-wrap: anywhere;
     }
 
     .hero {
-        padding: 7rem 1rem 3rem;
+        min-height: auto;
+        padding: 7.5rem 1rem 3rem;
+        display: block;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .hero-logo {
+        width: 88px;
+        height: 88px;
+        margin-bottom: 0.9rem;
+    }
+
+    .hero-badge {
+        max-width: 100%;
+        padding: 0.55rem 1rem;
+        border-radius: 8px;
+        white-space: normal;
+    }
+
+    .brand-hashtag {
+        font-size: 1.1rem;
+        margin: 0 0 0.95rem;
+        overflow-wrap: anywhere;
     }
 
     .hero-subtitle {
         font-size: 1.05rem;
+        line-height: 1.65;
+        max-width: 100%;
+        margin-bottom: 1.6rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        gap: 0.85rem;
+        margin-bottom: 2rem;
     }
 
     .hero-buttons .btn,
     .contact-actions .btn {
         width: 100%;
         justify-content: center;
+        min-height: 52px;
+        padding: 0.9rem 1rem;
+        border-radius: 8px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .stat {
+        padding: 0.8rem 1rem;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .stat-number {
+        font-size: 2.15rem;
+        line-height: 1;
+    }
+
+    .stat-label {
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .hero-mascots {
+        display: none;
     }
 
     .program-grid {
@@ -1733,7 +1909,20 @@ body.dark-mode .form-group textarea:valid ~ label {
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: clamp(1.85rem, 9vw, 2.45rem);
+        line-height: 1.18;
+        overflow-wrap: anywhere;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .section-tag {
+        border-radius: 8px;
+        max-width: 100%;
+        white-space: normal;
     }
     
     .about-grid,
